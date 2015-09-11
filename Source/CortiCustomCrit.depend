@@ -1,0 +1,204 @@
+# depslib dependency file v1.0
+1429194190 source:d:\daten\privat\cortipluginstest\dynplugins\corticustomcrit\main.cpp
+	<DynRPG/DynRPG.h>
+	<sstream>
+	<fstream>
+	<algorithm>
+	"../../../Project1/DynPlugins/CortiSys/helper.cpp"
+	"ConfigLoad.cpp"
+	"CustomCrit.cpp"
+
+1429191232 d:\daten\privat\project1\dynplugins\cortisys\helper.cpp
+	<sstream>
+
+1422531015 d:\daten\privat\cortipluginstest\dynplugins\corticustomcrit\configload.cpp
+
+1429194727 d:\daten\privat\cortipluginstest\dynplugins\corticustomcrit\customcrit.cpp
+
+1371744621 d:\developementtools\libraries\dynrpgv20\dynrpg\dynrpg.h
+	<string>
+	<map>
+	<windows.h>
+	"DArray.h"
+	"ArrayBaseOne.h"
+	"DList.h"
+	"Catalog.h"
+	"DString.h"
+	"DBitmap.h"
+	"Image.h"
+	"Canvas.h"
+	"Music.h"
+	"Sound.h"
+	"Input.h"
+	"Picture.h"
+	"DBSystem.h"
+	"System.h"
+	"Screen.h"
+	"Variables.h"
+	"Switches.h"
+	"MoveRoute.h"
+	"Character.h"
+	"Action.h"
+	"Battler.h"
+	"DBActor.h"
+	"Actor.h"
+	"Monster.h"
+	"Map.h"
+	"EventScriptLine.h"
+	"EventScriptData.h"
+	"BattleSettings.h"
+	"ParsedCommentData.h"
+
+1328978559 d:\developementtools\libraries\dynrpgv20\dynrpg\darray.h
+
+1328006711 d:\developementtools\libraries\dynrpgv20\dynrpg\arraybaseone.h
+
+1358299925 d:\developementtools\libraries\dynrpgv20\dynrpg\dlist.h
+
+1358299533 d:\developementtools\libraries\dynrpgv20\dynrpg\catalog.h
+
+1328140769 d:\developementtools\libraries\dynrpgv20\dynrpg\dstring.h
+
+1328978560 d:\developementtools\libraries\dynrpgv20\dynrpg\dbitmap.h
+
+1328481900 d:\developementtools\libraries\dynrpgv20\dynrpg\image.h
+
+1328653018 d:\developementtools\libraries\dynrpgv20\dynrpg\canvas.h
+
+1328203944 d:\developementtools\libraries\dynrpgv20\dynrpg\music.h
+
+1328203941 d:\developementtools\libraries\dynrpgv20\dynrpg\sound.h
+
+1426513652 d:\developementtools\libraries\dynrpgv20\dynrpg\input.h
+
+1328380568 d:\developementtools\libraries\dynrpgv20\dynrpg\picture.h
+
+1328251775 d:\developementtools\libraries\dynrpgv20\dynrpg\dbsystem.h
+
+1370910532 d:\developementtools\libraries\dynrpgv20\dynrpg\system.h
+
+1366144876 d:\developementtools\libraries\dynrpgv20\dynrpg\screen.h
+
+1329150749 d:\developementtools\libraries\dynrpgv20\dynrpg\variables.h
+
+1328982803 d:\developementtools\libraries\dynrpgv20\dynrpg\switches.h
+
+1328452444 d:\developementtools\libraries\dynrpgv20\dynrpg\moveroute.h
+
+1329335923 d:\developementtools\libraries\dynrpgv20\dynrpg\character.h
+
+1371744621 d:\developementtools\libraries\dynrpgv20\dynrpg\action.h
+
+1363383111 d:\developementtools\libraries\dynrpgv20\dynrpg\battler.h
+
+1328287414 d:\developementtools\libraries\dynrpgv20\dynrpg\dbactor.h
+
+1370910351 d:\developementtools\libraries\dynrpgv20\dynrpg\actor.h
+
+1328283149 d:\developementtools\libraries\dynrpgv20\dynrpg\monster.h
+
+1329321219 d:\developementtools\libraries\dynrpgv20\dynrpg\map.h
+
+1328452444 d:\developementtools\libraries\dynrpgv20\dynrpg\eventscriptline.h
+
+1329150559 d:\developementtools\libraries\dynrpgv20\dynrpg\eventscriptdata.h
+
+1328529971 d:\developementtools\libraries\dynrpgv20\dynrpg\battlesettings.h
+
+1328468840 d:\developementtools\libraries\dynrpgv20\dynrpg\parsedcommentdata.h
+
+1429194190 source:d:\daten\malte\spaces\corti\dynplugins v20\plugins\dynplugins\corticustomcrit\main.cpp
+	<DynRPG/DynRPG.h>
+	<sstream>
+	<fstream>
+	<algorithm>
+	"../../../Project1/DynPlugins/CortiSys/helper.cpp"
+	"ConfigLoad.cpp"
+	"CustomCrit.cpp"
+
+1422531015 d:\daten\malte\spaces\corti\dynplugins v20\plugins\dynplugins\corticustomcrit\configload.cpp
+
+1429194727 d:\daten\malte\spaces\corti\dynplugins v20\plugins\dynplugins\corticustomcrit\customcrit.cpp
+
+1441956966 source:d:\daten\malte\github\corticustomcrit\source\ressource.rc
+	<winver.h>
+
+1441969180 source:d:\daten\malte\github\corticustomcrit\source\main.cpp
+	<sstream>
+	<fstream>
+	<algorithm>
+	<DynRPG/DynRPG.h>
+	"Common//Dialog.cpp"
+	"Common//Helper.cpp"
+	"Configuration//ConfigDebug.cpp"
+	"Configuration//Configuration.cpp"
+	"Configuration//ConfigSkills.cpp"
+	"Configuration//ConfigType1.cpp"
+	"Configuration//ConfigType3.cpp"
+	"Calculations//LevelInfluence.cpp"
+	"Calculations//CritCalcType1.cpp"
+	"Calculations//CritCalcType2.cpp"
+	"Calculations//CritCalcType3.cpp"
+	"Calculations//Calculations.cpp"
+	"CriticalStrikes//SplashEffect.cpp"
+	"CriticalStrikes//DrawCritSplash.cpp"
+	"CriticalStrikes//HeroAttackBonus.cpp"
+	"CriticalStrikes//CritCommands.cpp"
+	"CustomCrit.cpp"
+	"Callbacks//onSystem.cpp"
+	"Callbacks//onBattlerAction.cpp"
+	"Callbacks//onBattlerDrawn.cpp"
+	"Callbacks//onFrame.cpp"
+	"Callbacks//onComment.cpp"
+
+1441953522 d:\daten\malte\github\corticustomcrit\source\common\\dialog.cpp
+	<sstream>
+	<algorithm>
+	<fstream>
+
+1441958494 d:\daten\malte\github\corticustomcrit\source\common\\helper.cpp
+
+1441965305 d:\daten\malte\github\corticustomcrit\source\configload.cpp
+
+1441987002 d:\daten\malte\github\corticustomcrit\source\customcrit.cpp
+
+1441974554 d:\daten\malte\github\corticustomcrit\source\callbacks\\onsystem.cpp
+
+1441985020 d:\daten\malte\github\corticustomcrit\source\callbacks\\onbattleraction.cpp
+
+1441969134 d:\daten\malte\github\corticustomcrit\source\callbacks\\onframe.cpp
+
+1441968057 d:\daten\malte\github\corticustomcrit\source\callbacks\\onbattlerdrawn.cpp
+
+1441982339 d:\daten\malte\github\corticustomcrit\source\configuration\\configuration.cpp
+
+1441969180 d:\daten\malte\github\corticustomcrit\source\callbacks\\oncomment.cpp
+
+1441964076 d:\daten\malte\github\corticustomcrit\source\configuration\\debug.cpp
+
+1441973562 d:\daten\malte\github\corticustomcrit\source\configuration\\configdebug.cpp
+
+1441982339 d:\daten\malte\github\corticustomcrit\source\configuration\\configskills.cpp
+
+1441965215 d:\daten\malte\github\corticustomcrit\source\configuration\\configtype1.cpp
+
+1441965294 d:\daten\malte\github\corticustomcrit\source\configuration\\configtype3.cpp
+
+1441982909 d:\daten\malte\github\corticustomcrit\source\calculations\\critcalctype1.cpp
+
+1441985970 d:\daten\malte\github\corticustomcrit\source\calculations\\critcalctype2.cpp
+
+1441981763 d:\daten\malte\github\corticustomcrit\source\calculations\\critcalctype3.cpp
+
+1441973503 d:\daten\malte\github\corticustomcrit\source\calculations\\levelinfluence.cpp
+
+1441985037 d:\daten\malte\github\corticustomcrit\source\calculations\\calculations.cpp
+
+1441968540 d:\daten\malte\github\corticustomcrit\source\criticalstrikes\\drawcritsplash.cpp
+
+1441973217 d:\daten\malte\github\corticustomcrit\source\criticalstrikes\\heroattackbonus.cpp
+
+1441983319 d:\daten\malte\github\corticustomcrit\source\criticalstrikes\\splasheffect.cpp
+
+1441969361 d:\daten\malte\github\corticustomcrit\source\criticalstrikes\\critcommands.cpp
+

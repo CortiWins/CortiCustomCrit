@@ -1,0 +1,110 @@
+namespace ConfigSkills
+{
+// SKILLSPECIFIC BONUSES
+// < SkillId , Konstanter Critchancebonus additiv in % > Wertepaar welcher Skill um wieviel erhöht wird
+std::map<int,int> skillAddConstant;
+// < SkillId , Konstanter Critchancebonus multiplikativ in % > Wertepaar welcher Skill um wieviel erhöht wird
+std::map<int,int> skillMulConstant;
+// < SkillId , Aus Variable Critchancebonus additiv in % > Wertepaar welcher Skill um wieviel erhöht wird
+std::map<int,int> skillAddVariable;
+// < SkillId , Aus Variable Critchancebonus multiplikativ in % > Wertepaar welcher Skill um wieviel erhöht wird
+std::map<int,int> skillMulVariable;
+
+// Lädt die Einstellungen für spezielle Skills
+void Load()
+{
+    // Leeren und Rücksetzen der Maps
+    skillAddConstant.clear();
+    skillMulConstant.clear();
+    skillAddVariable.clear();
+    skillMulVariable.clear();
+
+    bool endChecking = false;
+    int increasingValue = 1;
+
+    do
+    {
+        // Konstruieren des Schlüssels
+        std::stringstream keyName;
+        keyName << "SkillId" << (increasingValue);
+
+        // Prüfen ob für den Schlüssel ein Wertepaar vorhanden ist
+        if(configMap.count(keyName.str()))
+        {
+            // Wenn Paar vorhanden, Wert auslesen. Dieser entspricht der Nummer des Skills
+            int skillId = (atoi(configMap[keyName.str()].c_str()));
+            if((skillId>0)) // Ckecken ob die Skill-Nummer im erlaubten Bereich ist
+            {
+                // ADDITIV CONSTANT
+                std::stringstream keyNameAddCon;
+                keyNameAddCon << "SkillAddCon" << (increasingValue);
+                // Prüfen ob für den Schlüssel ein Wertepaar vorhanden ist
+                if(configMap.count(keyNameAddCon.str()))
+                {
+                    // Wenn Paar vorhanden, Wert auslesen.
+                    int value = (atoi(configMap[keyNameAddCon.str()].c_str()));
+                    if((value>0)) // Ckecken ob die Skill-Nummer im erlaubten Bereich ist
+                    {
+                        // Assoziation SkillId <-> VaribleId hinterlegen
+                        skillAddConstant[skillId] = value;
+                    }
+                }
+
+                // MULTIPLKATIV CONSTANT
+                std::stringstream keyNameMulCon;
+                keyNameMulCon << "SkillMulCon" << (increasingValue);
+                // Prüfen ob für den Schlüssel ein Wertepaar vorhanden ist
+                if(configMap.count(keyNameMulCon.str()))
+                {
+                    // Wenn Paar vorhanden, Wert auslesen.
+                    int value = (atoi(configMap[keyNameMulCon.str()].c_str()));
+                    if((value>0)) // Ckecken ob die Skill-Nummer im erlaubten Bereich ist
+                    {
+                        // Assoziation SkillId <-> VaribleId hinterlegen
+                        skillMulConstant[skillId] = value;
+                    }
+                }
+
+                // ADDITIV VARIABLE
+                std::stringstream keyNameAddVar;
+                keyNameAddVar << "SkillAddVar" << (increasingValue);
+                // Prüfen ob für den Schlüssel ein Wertepaar vorhanden ist
+                if(configMap.count(keyNameAddVar.str()))
+                {
+                    // Wenn Paar vorhanden, Wert auslesen.
+                    int value = (atoi(configMap[keyNameAddVar.str()].c_str()));
+                    if((value>0)) // Ckecken ob die Skill-Nummer im erlaubten Bereich ist
+                    {
+                        // Assoziation SkillId <-> VaribleId hinterlegen
+                        skillAddVariable[skillId] = value;
+                    }
+                }
+
+                // MULTIPLKATIV VARIABLE
+                std::stringstream keyNameMulVar;
+                keyNameMulVar << "SkillMulVar" << (increasingValue);
+                // Prüfen ob für den Schlüssel ein Wertepaar vorhanden ist
+                if(configMap.count(keyNameMulVar.str()))
+                {
+                    // Wenn Paar vorhanden, Wert auslesen.
+                    int value = (atoi(configMap[keyNameMulVar.str()].c_str()));
+                    if((value>0)) // Ckecken ob die Skill-Nummer im erlaubten Bereich ist
+                    {
+                        // Assoziation SkillId <-> VaribleId hinterlegen
+                        skillMulVariable[skillId] = value;
+                    }
+                }
+
+            }
+
+            increasingValue++;
+        }
+        else
+        {
+            // Wertepaar nicht vorhanden. Auslesen dieser Daten stoppen.
+            endChecking = true;
+        }
+    }
+    while(!endChecking);
+}
+}

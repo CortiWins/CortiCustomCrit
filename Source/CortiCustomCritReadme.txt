@@ -1,4 +1,6 @@
-CortiCustomCrit DynRPG PlugIn V0.5 by Corti ( 2013-2015 )
+CortiCustomCrit DynRPG PlugIn V0.5 
+	by Corti ( 2013-2015 )	
+	for RPG Maker 2003 with DynRPG v0.20 or higher 
 
 *******************************************************************
 *                     Versions

@@ -4,12 +4,12 @@ namespace Calculations
 // Returns the modifies crit chance.
 int CalcSkillspecific(int currentCritChance, int skillId)
 {
-    // MULTIPLIKATIV VARIABLE
-    if(ConfigSkills::skillMulVariable.count(skillId))
+    // MULTIPLIKATIV KONSTANT
+    if(ConfigSkills::skillMulConstant.count(skillId))
     {
         // Multiplikative Chance zu dem Skill in Map hinterlegt
-        int variableId = ConfigSkills::skillMulVariable[skillId];
-        currentCritChance = (currentCritChance * RPG::variables[variableId]) / 100;
+        int bonus = ConfigSkills::skillMulConstant[skillId];
+        currentCritChance = (currentCritChance * bonus) / 100;
     }
     else if(Configuration::disabledSkillCrit == true)
     {
@@ -17,12 +17,12 @@ int CalcSkillspecific(int currentCritChance, int skillId)
         currentCritChance = 0;
     }
 
-    // MULTIPLIKATIV KONSTANT
-    if(ConfigSkills::skillMulConstant.count(skillId))
+    // MULTIPLIKATIV VARIABLE
+    if(ConfigSkills::skillMulVariable.count(skillId))
     {
         // Multiplikative Chance zu dem Skill in Map hinterlegt
-        int bonus = ConfigSkills::skillMulConstant[skillId];
-        currentCritChance = (currentCritChance * bonus) / 100;
+        int variableId = ConfigSkills::skillMulVariable[skillId];
+        currentCritChance = (currentCritChance * RPG::variables[variableId]) / 100;
     }
 
     // ADDITIV VARIABLE

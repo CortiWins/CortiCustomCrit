@@ -35,6 +35,10 @@ void Load()
             int skillId = (atoi(configMap[keyName.str()].c_str()));
             if((skillId>0)) // Ckecken ob die Skill-Nummer im erlaubten Bereich ist
             {
+                std::stringstream debugString;
+                debugString << "Skillspecific Modification: \n";
+                debugString << "Skill ID: " << skillId << "\n";
+
                 // ADDITIV CONSTANT
                 std::stringstream keyNameAddCon;
                 keyNameAddCon << "SkillAddCon" << (increasingValue);
@@ -47,6 +51,7 @@ void Load()
                     {
                         // Assoziation SkillId <-> VaribleId hinterlegen
                         skillAddConstant[skillId] = value;
+                        debugString << "Additive Constant: " << value << "\n";
                     }
                 }
 
@@ -62,6 +67,7 @@ void Load()
                     {
                         // Assoziation SkillId <-> VaribleId hinterlegen
                         skillMulConstant[skillId] = value;
+                        debugString << "Multiplicative Constant: " << value << "\n";
                     }
                 }
 
@@ -77,6 +83,7 @@ void Load()
                     {
                         // Assoziation SkillId <-> VaribleId hinterlegen
                         skillAddVariable[skillId] = value;
+                        debugString << "Additive from Variable: " << value << "\n";
                     }
                 }
 
@@ -92,9 +99,14 @@ void Load()
                     {
                         // Assoziation SkillId <-> VaribleId hinterlegen
                         skillMulVariable[skillId] = value;
+                        debugString << "Multiplicative from Variable: " << value << "\n";
                     }
                 }
 
+                if(ConfigDebug::debugParams)
+                {
+                    Dialog::ShowInfoBox(debugString.str(),"[CortiCustomCrit] Debug Configuration Data");
+                }
             }
 
             increasingValue++;

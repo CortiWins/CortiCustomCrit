@@ -120,7 +120,7 @@
 
 1429194727 d:\daten\malte\spaces\corti\dynplugins v20\plugins\dynplugins\corticustomcrit\customcrit.cpp
 
-1441956966 source:d:\daten\malte\github\corticustomcrit\source\ressource.rc
+1442136747 source:d:\daten\malte\github\corticustomcrit\source\ressource.rc
 	<winver.h>
 
 1441969180 source:d:\daten\malte\github\corticustomcrit\source\main.cpp
@@ -164,7 +164,7 @@
 
 1441974554 d:\daten\malte\github\corticustomcrit\source\callbacks\\onsystem.cpp
 
-1441985020 d:\daten\malte\github\corticustomcrit\source\callbacks\\onbattleraction.cpp
+1442135926 d:\daten\malte\github\corticustomcrit\source\callbacks\\onbattleraction.cpp
 
 1441969134 d:\daten\malte\github\corticustomcrit\source\callbacks\\onframe.cpp
 
@@ -178,7 +178,7 @@
 
 1441973562 d:\daten\malte\github\corticustomcrit\source\configuration\\configdebug.cpp
 
-1441982339 d:\daten\malte\github\corticustomcrit\source\configuration\\configskills.cpp
+1442136599 d:\daten\malte\github\corticustomcrit\source\configuration\\configskills.cpp
 
 1441965215 d:\daten\malte\github\corticustomcrit\source\configuration\\configtype1.cpp
 
@@ -192,7 +192,7 @@
 
 1441973503 d:\daten\malte\github\corticustomcrit\source\calculations\\levelinfluence.cpp
 
-1441985037 d:\daten\malte\github\corticustomcrit\source\calculations\\calculations.cpp
+1442136353 d:\daten\malte\github\corticustomcrit\source\calculations\\calculations.cpp
 
 1441968540 d:\daten\malte\github\corticustomcrit\source\criticalstrikes\\drawcritsplash.cpp
 

@@ -1,6 +1,6 @@
-CortiCustomCrit DynRPG PlugIn V0.5 
-	by Corti ( 2013-2015 )	
-	for RPG Maker 2003 with DynRPG v0.20 or higher 
+CortiCustomCrit DynRPG PlugIn V0.6
+	by Corti ( 2013-2015 )
+	for RPG Maker 2003 with DynRPG v0.20 or higher
 
 github.com/CortiWins/CortiCustomCrit
 *******************************************************************
@@ -11,6 +11,7 @@ github.com/CortiWins/CortiCustomCrit
 (V0.3) [28.01.2014] Error on reset fixed
 (V0.4) [30.01.2015] Skillspecific modification of critchances
 (V0.5) [11.09.2015] Restructured, translated. New setting: CritCalcOnSkillsDisabled
+(V0.6) [13.09.2015] Fixed bug that prevent reenabling of specific skill if crit is disabled on skills. Improved documentation for Skillspecific Modifications. Translated DynRPG.ini lines.
 
 Planned for future releases:
 * adding agility as a crit stat in a way less complex than calculation type 3.
@@ -101,7 +102,7 @@ Hero int can be used for magic.
 Monster it can be used as enemy level if configured that way.
 
 ========= CONFIGURATION ====================
-; CalculationType1 : DefaultCritChance
+; CalculationType1 : DefaultCritChance for all heroes that are not specifically set
 t1CritChanceDefault=20
 
 ; Hero with database ID 5 gets a 25% chance to crit.
@@ -217,7 +218,25 @@ SkillIdX=123
 SkillMulConX=0
 SkillMulVarX=0
 SkillAddConX=0
-SkillAddVarX=0
+SkillAddVarX=04
+
+========= CONFIGURATION ====================
+The X is a number. Use "SkillId1" for the first skill, "SkillId2" for the second.
+Parsing the parameters stops when a number is not found.
+
+How to set up different skills:
+
+; Skill 123 does have his crit chance doubled
+SkillId1=123
+SkillMulCon1=200
+
+; Skill 19 does have his crit chance increased by the value in variable 4200
+SkillId2=19
+SkillAddVar2=4200
+
+; Skill 23 will not be configured because there is no skill configured with "SkillId3=..."
+SkillId4=23
+SkillAddCon4=30
 
 *******************************************************************
 *                     Configuration: Disabling crit on skills
@@ -248,8 +267,8 @@ This parameter can be used to check your settings when you encounter problems.
 DebugParams=1
 
 Example:
-1 = Anzeigen welche Parameter eingelesen und verarbeitet wurden
-0 = Deaktiviert ( default )
+1 = Show which parameters are set.
+0 = Deactivated ( default )
 
 The following parameters activate writing the results of a crit calculation into variabled.
 

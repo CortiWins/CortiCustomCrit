@@ -1,8 +1,8 @@
 // Zu setzende Einstellungen für Versionsanzeige in Windows Dateieigenschaften.
 #define VER_FILENAME               "CortiXCustomCrit.dll"
 #define VER_COPYRIGHT           "Corti, 2013-2015"
-#define VER_VERSION                 0,5,0,0
-#define VER_VERSION_STR         "0.5.0.0"
+#define VER_VERSION                 0,6,0,0
+#define VER_VERSION_STR         "0.6.0.0"
 
 // Keine notwendigen Änderungen ab hier:
 #include <winver.h>

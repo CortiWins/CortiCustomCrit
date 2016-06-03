@@ -19,5 +19,30 @@ bool onComment(
         CritCommands::ResetStatus(parsedData);
         return false;
     }
+    else if(!strcmp(parsedData->command, "ccrit_skill_addcon"))
+    {
+        CritCommands::AddSkillData(parsedData, 1);
+        return false;
+    }
+    else if(!strcmp(parsedData->command, "ccrit_skill_addvar"))
+    {
+        CritCommands::AddSkillData(parsedData, 2);
+        return false;
+    }
+    else if(!strcmp(parsedData->command, "ccrit_skill_mulcon"))
+    {
+        CritCommands::AddSkillData(parsedData, 3);
+        return false;
+    }
+    else if(!strcmp(parsedData->command, "ccrit_skill_mulvar"))
+    {
+        CritCommands::AddSkillData(parsedData, 4);
+        return false;
+    }
+    else if(!strcmp(parsedData->command, "ccrit_skill_delay"))
+    {
+        CritCommands::AddSkillData(parsedData, 5);
+        return false;
+    }
     return true;
 }

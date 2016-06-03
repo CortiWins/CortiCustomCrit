@@ -78,8 +78,6 @@ void Load()
                     }
                 }
 
-
-
                 // ADDITIV VARIABLE
                 {
                     std::stringstream keyNameAddVar;

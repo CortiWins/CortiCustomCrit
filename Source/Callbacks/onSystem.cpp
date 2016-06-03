@@ -11,6 +11,7 @@ void onInitFinished()
     ConfigDebug::Load();
     Configuration::Load();
     ConfigSkills::Load();
+     CortiConfig::Load();
 
     if(Configuration::critCalcType == 1)
     {

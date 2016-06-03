@@ -16,6 +16,7 @@ std::map<std::string, std::string> configMap;
 #include "Configuration//ConfigDebug.cpp"
 #include "Configuration//Configuration.cpp"
 #include "Configuration//ConfigSkills.cpp"
+#include "Configuration//CortiConfig.cpp"
 #include "Configuration//ConfigType1.cpp"
 #include "Configuration//ConfigType3.cpp"
 

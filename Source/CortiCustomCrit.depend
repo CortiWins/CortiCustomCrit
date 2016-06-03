@@ -123,7 +123,7 @@
 1442136747 source:d:\daten\malte\github\corticustomcrit\source\ressource.rc
 	<winver.h>
 
-1442405506 source:d:\daten\malte\github\corticustomcrit\source\main.cpp
+1464937266 source:d:\daten\malte\github\corticustomcrit\source\main.cpp
 	<sstream>
 	<fstream>
 	<algorithm>
@@ -134,6 +134,7 @@
 	"Configuration//ConfigDebug.cpp"
 	"Configuration//Configuration.cpp"
 	"Configuration//ConfigSkills.cpp"
+	"Configuration//CortiConfig.cpp"
 	"Configuration//ConfigType1.cpp"
 	"Configuration//ConfigType3.cpp"
 	"Calculations//LevelInfluence.cpp"
@@ -163,7 +164,7 @@
 
 1442405664 d:\daten\malte\github\corticustomcrit\source\customcrit.cpp
 
-1464900472 d:\daten\malte\github\corticustomcrit\source\callbacks\\onsystem.cpp
+1464937237 d:\daten\malte\github\corticustomcrit\source\callbacks\\onsystem.cpp
 
 1442135926 d:\daten\malte\github\corticustomcrit\source\callbacks\\onbattleraction.cpp
 
@@ -173,13 +174,13 @@
 
 1441982339 d:\daten\malte\github\corticustomcrit\source\configuration\\configuration.cpp
 
-1441969180 d:\daten\malte\github\corticustomcrit\source\callbacks\\oncomment.cpp
+1464942252 d:\daten\malte\github\corticustomcrit\source\callbacks\\oncomment.cpp
 
 1441964076 d:\daten\malte\github\corticustomcrit\source\configuration\\debug.cpp
 
 1441973562 d:\daten\malte\github\corticustomcrit\source\configuration\\configdebug.cpp
 
-1464935388 d:\daten\malte\github\corticustomcrit\source\configuration\\configskills.cpp
+1464937160 d:\daten\malte\github\corticustomcrit\source\configuration\\configskills.cpp
 
 1441965215 d:\daten\malte\github\corticustomcrit\source\configuration\\configtype1.cpp
 
@@ -201,7 +202,7 @@
 
 1441983319 d:\daten\malte\github\corticustomcrit\source\criticalstrikes\\splasheffect.cpp
 
-1441969361 d:\daten\malte\github\corticustomcrit\source\criticalstrikes\\critcommands.cpp
+1464942301 d:\daten\malte\github\corticustomcrit\source\criticalstrikes\\critcommands.cpp
 
 1441953522 d:\daten\malte\github\corticustomcrit\source\common\dialog.cpp
 	<sstream>
@@ -211,4 +212,6 @@
 1441958494 d:\daten\malte\github\corticustomcrit\source\common\helper.cpp
 
 1442405531 d:\daten\malte\github\corticustomcrit\source\common\random.cpp
+
+1464937383 d:\daten\malte\github\corticustomcrit\source\configuration\\corticonfig.cpp
 

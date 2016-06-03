@@ -123,13 +123,14 @@
 1442136747 source:d:\daten\malte\github\corticustomcrit\source\ressource.rc
 	<winver.h>
 
-1441969180 source:d:\daten\malte\github\corticustomcrit\source\main.cpp
+1442405506 source:d:\daten\malte\github\corticustomcrit\source\main.cpp
 	<sstream>
 	<fstream>
 	<algorithm>
 	<DynRPG/DynRPG.h>
-	"Common//Dialog.cpp"
-	"Common//Helper.cpp"
+	"Common/Dialog.cpp"
+	"Common/Helper.cpp"
+	"Common/Random.cpp"
 	"Configuration//ConfigDebug.cpp"
 	"Configuration//Configuration.cpp"
 	"Configuration//ConfigSkills.cpp"
@@ -160,9 +161,9 @@
 
 1441965305 d:\daten\malte\github\corticustomcrit\source\configload.cpp
 
-1441987002 d:\daten\malte\github\corticustomcrit\source\customcrit.cpp
+1442405664 d:\daten\malte\github\corticustomcrit\source\customcrit.cpp
 
-1441974554 d:\daten\malte\github\corticustomcrit\source\callbacks\\onsystem.cpp
+1464900472 d:\daten\malte\github\corticustomcrit\source\callbacks\\onsystem.cpp
 
 1442135926 d:\daten\malte\github\corticustomcrit\source\callbacks\\onbattleraction.cpp
 
@@ -178,7 +179,7 @@
 
 1441973562 d:\daten\malte\github\corticustomcrit\source\configuration\\configdebug.cpp
 
-1442136599 d:\daten\malte\github\corticustomcrit\source\configuration\\configskills.cpp
+1464935388 d:\daten\malte\github\corticustomcrit\source\configuration\\configskills.cpp
 
 1441965215 d:\daten\malte\github\corticustomcrit\source\configuration\\configtype1.cpp
 
@@ -194,11 +195,20 @@
 
 1442136353 d:\daten\malte\github\corticustomcrit\source\calculations\\calculations.cpp
 
-1441968540 d:\daten\malte\github\corticustomcrit\source\criticalstrikes\\drawcritsplash.cpp
+1464934731 d:\daten\malte\github\corticustomcrit\source\criticalstrikes\\drawcritsplash.cpp
 
 1441973217 d:\daten\malte\github\corticustomcrit\source\criticalstrikes\\heroattackbonus.cpp
 
 1441983319 d:\daten\malte\github\corticustomcrit\source\criticalstrikes\\splasheffect.cpp
 
 1441969361 d:\daten\malte\github\corticustomcrit\source\criticalstrikes\\critcommands.cpp
+
+1441953522 d:\daten\malte\github\corticustomcrit\source\common\dialog.cpp
+	<sstream>
+	<algorithm>
+	<fstream>
+
+1441958494 d:\daten\malte\github\corticustomcrit\source\common\helper.cpp
+
+1442405531 d:\daten\malte\github\corticustomcrit\source\common\random.cpp
 

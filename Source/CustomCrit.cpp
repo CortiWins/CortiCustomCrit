@@ -53,7 +53,8 @@ void OnDoHeroAction ( RPG::Battler *battler )
         }
 
          // Roll the dice and compare to calculated crit value.
-        int rnd = RPG::getDiceRoll(100);
+        // int rnd = RPG::getDiceRoll(100);
+        int rnd = Random::GetRandomNumber(1,100);
         if(rnd<=currentCritChance)
         {
             // Action is critical, so set Attack bonus for battler.

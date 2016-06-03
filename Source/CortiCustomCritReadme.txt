@@ -12,6 +12,7 @@ github.com/CortiWins/CortiCustomCrit
 (V0.4) [30.01.2015] Skillspecific modification of critchances
 (V0.5) [11.09.2015] Restructured, translated. New setting: CritCalcOnSkillsDisabled
 (V0.6) [13.09.2015] Fixed bug that prevent reenabling of specific skill if crit is disabled on skills. Improved documentation for Skillspecific Modifications. Translated DynRPG.ini lines.
+(V0.7) [13.09.2015] Skillspecific delay for <CRIT!> Icon!
 
 Planned for future releases:
 * adding agility as a crit stat in a way less complex than calculation type 3.
@@ -211,6 +212,9 @@ Example: 20 = 10 +20% critical strike chance
 * Additive chance from variable
 Example: 123 = + \v[123] critical strike chance
 
+* Delay to shew the > CRIT! < Icon in frames.
+Example: 25 = showing tthe icon is delayed by 25 frames.
+
 Formular for Hero (H) using Skill (S)
 CritChance = ( CritChance(H) * MultiConst(S) /100  * MultiVar(S) / 100 ) + AddConst(S) + AddVar(S)
 
@@ -219,6 +223,7 @@ SkillMulConX=0
 SkillMulVarX=0
 SkillAddConX=0
 SkillAddVarX=04
+SkillDelayX=25
 
 ========= CONFIGURATION ====================
 The X is a number. Use "SkillId1" for the first skill, "SkillId2" for the second.

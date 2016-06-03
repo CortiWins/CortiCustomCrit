@@ -9,8 +9,9 @@
 std::map<std::string, std::string> configMap;
 
 // Common Functions
-#include "Common//Dialog.cpp"
-#include "Common//Helper.cpp"
+#include "Common/Dialog.cpp"
+#include "Common/Helper.cpp"
+#include "Common/Random.cpp"
 
 #include "Configuration//ConfigDebug.cpp"
 #include "Configuration//Configuration.cpp"

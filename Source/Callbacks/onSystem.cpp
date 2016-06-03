@@ -36,7 +36,9 @@ void onInitFinished()
     }
 
     HeroAttackBonus::Load();
+    DrawCritSplash::ResetFrames();
     SplashEffect::Load();
+    Random::Load();
 }
 
 // This handler is called when the game exits

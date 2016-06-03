@@ -75,6 +75,10 @@
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
+		<Unit filename="Common/Random.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Unit filename="Configuration/ConfigDebug.cpp">
 			<Option compile="0" />
 			<Option link="0" />
